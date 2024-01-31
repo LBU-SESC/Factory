@@ -28,7 +28,7 @@ public class TheApplication extends JFrame
 			
 		Shape s;
 		Color col = new Color(255, 0, 0);
-        //head
+        	//head
 		try
 		{
 			s = factory.getShape("rectangle");
@@ -40,40 +40,40 @@ public class TheApplication extends JFrame
 			System.out.println("missing shape");
 		}
    		
-        //left eye white
-        try
-        {
-        	s = factory.getShape("circle");
-       		col = new Color(255, 255, 255);
-            s.set(col, eyeX, eyeY, eyeSize);
-            Shapes.add(s);
-    	}catch( java.lang.RuntimeException e)
-    	{
-    		System.out.println("missing shape");
-    	}
+        	//left eye white
+       		try
+        	{
+        		s = factory.getShape("circle");
+       			col = new Color(255, 255, 255);
+            		s.set(col, eyeX, eyeY, eyeSize);
+            		Shapes.add(s);
+    		}catch( java.lang.RuntimeException e)
+    		{
+    			System.out.println("missing shape");
+    		}
            
-        //right eye white
-        try
-    	{
-        	s = factory.getShape("circle");
-       		s.set(col, eyeX+eyeGap, eyeY, eyeSize);
-            Shapes.add(s);
-    	}catch( java.lang.RuntimeException e)
-    	{
-    		System.out.println("missing shape");
-    	}
+        	//right eye white
+        	try
+    		{
+        		s = factory.getShape("circle");
+       			s.set(col, eyeX+eyeGap, eyeY, eyeSize);
+            		Shapes.add(s);
+    		}catch( java.lang.RuntimeException e)
+    		{
+    			System.out.println("missing shape");
+    		}
            
-        //mouth
-        try
-    	{
-        	s = factory.getShape("ellipse");
-       		col = new Color(0,0,0);
-            s.set(col, mouthX, mouthY, mouthXsize, mouthYsize);
-            Shapes.add(s);   
-    	}catch( java.lang.RuntimeException e)
-    	{
-    		System.out.println("missing shape");
-    	}
+        	//mouth
+        	try
+    		{
+        		s = factory.getShape("ellipse");
+       			col = new Color(0,0,0);
+            		s.set(col, mouthX, mouthY, mouthXsize, mouthYsize);
+            		Shapes.add(s);   
+    		}catch( java.lang.RuntimeException e)
+    		{
+    			System.out.println("missing shape");
+    		}
            
 	}
 	
