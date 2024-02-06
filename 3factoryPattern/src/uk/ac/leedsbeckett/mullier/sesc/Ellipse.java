@@ -12,7 +12,7 @@ public class Ellipse extends Shape
 	    	 super();
 	     }
 	     
-	     public Ellipse(Color colour, int x, int y, int radius, int radiusy) 
+	     public Ellipse(Color colour, int x, int y, int radiusx, int radiusy)
 	     {
 	    	 super(colour, x, y);
 	         this.radiusx = radiusx; //the only thing that is different from shape
